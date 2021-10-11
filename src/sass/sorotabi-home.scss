@@ -1,0 +1,243 @@
+@import "vars";
+@import "ress";
+@import "common";
+
+main{
+    background-color: $bg-color;
+}
+    .searchWrap{
+        padding: 16px;
+        // margin-top: 70px;
+        button{
+            width: 24px;
+            img{
+                line-height: 39px;
+                width: 24px;
+                margin-top: 7px;
+            }
+
+        }
+
+    }
+    .search{
+        width: 100%;
+        height: 39px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 16px;
+        border: 1px solid $sorotabi-btn;
+        box-shadow: 0 6px 6px 0 #cccccc;
+        border-radius: 5px;
+        line-height: 39px;
+
+        input{
+            width: 90vw;
+            height: 39px;
+            padding: 0 16px;
+        }
+
+
+    }
+// -------------section_title----------------------
+// .section-top{
+//     // margin-top: 70px;
+// }
+section{
+    padding: 24px 0;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 6px 6px 0 #cccccc;
+    h2{
+        font-size: 2.2rem;
+        margin-left: 16px;
+        margin-bottom: 32px;
+    }
+    .show-all{
+        width: 100%;
+        text-align: right;
+        a{
+            margin-right: 16px;
+            font-size: 1.5rem;
+            color: #9F9F9F;
+        }
+    }
+}
+
+// --------------------記事------------
+.popularItemWrap{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.scrollItem{
+    width: 300px;
+    height: 100%;
+    margin: 16px;
+    // &:last-child{
+    //     margin-right: 0;
+    // }
+
+    figure img{
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 13px;
+        
+    }
+
+    .explanation{
+        display: flex;
+        justify-content: space-between;
+
+        .evaluation{
+            text-align: end;
+        }
+    }
+}
+
+.popularName{
+    h3{
+        font-size: 1.8rem;
+    }
+}
+
+.evaluation{
+    img{
+        width: 20px;
+    }
+    span{
+        font-size: 1.2em;
+    }
+
+    #number{
+        margin-left: 8px;
+        color: #B2B2B2;
+    }
+    
+}
+
+address{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+address,.times{
+    color: $address-color;
+}
+
+.Sales{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    p{
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+    .price{
+        line-height: 1.6rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $price-color;
+        margin-top: 5px;
+
+    }
+}
+.priceWrap{
+    text-align: end;
+    .people{
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+}
+
+//----------お気に入り登録した都道府県の観光場所-----------------------
+
+// .favorite{
+//     height: 437px;
+// }
+
+// ---------------交通プラン--------------------------------------
+.traffic{
+    height: 265px;
+}
+
+.traffic-btn{
+    display: flex;
+    flex-wrap:wrap;
+    button{
+        flex-wrap: wrap;
+        width: 50%;
+        height: 73px;
+        border: 1px solid #000000;
+    }
+    a{
+        font-size: 1.6rem;
+        height: 100%;
+    }
+    img{
+        margin-top: 7px;
+        margin-bottom: 5px;
+    }
+}
+
+// -------------公開プラン------------------------------------
+.Release-plan{
+    height: 100%;
+}
+
+
+.ReleaseWrap{
+    width: 100%;
+    border-top: 1px solid gray;
+    height: 298px;
+    padding: 20px 8px;
+    margin-bottom: 20px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+.Release-title{
+    display: flex;
+    
+    h3{
+        font-size: 1.6rem;
+        line-height: 74px;
+        margin-left: 22px;
+    }
+}
+
+.scrollWrap{
+    margin-top: 20px;
+    display: flex;
+    overflow-y: scroll;
+    img{
+        margin-right: 16px;
+    }
+}
+
+// --------------問い合わせ---------------------
+
+.Word-of-mouth{
+    height: 100%;
+    padding: 20px 16px;
+    button{
+        border: 1px solid #000000;
+        font-size: 1.4rem;
+        width: 100%;
+        line-height: 50px;
+        a{
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 16px;
+            height: 50px;
+        }
+        img{
+            width: 6px;
+        }
+    }
+}
+

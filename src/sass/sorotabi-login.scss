@@ -1,0 +1,85 @@
+@import "vars";
+@import "ress";
+@import "common";
+
+html{
+    background: url("../img/Travel .png");
+}
+
+// ーーーーーーーーーーーフォームの大きさーーーーーーーーーーーー
+section{
+    width: 322px;
+    height: 100%;
+    padding: 20px 20px 40px 20px;
+    // border: 1px solid #000000;
+    border-radius: 5px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: 16px;
+    background: #ffffff;
+    
+    h2{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h3{
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+    // ーーーーーーーーーーーーー入力欄ーーーーーーーーーーーーー
+    input{
+        width: 100%;
+        height: 47px; //ーーーーーーーーー入力欄の高さ
+        border: 1px solid #000;
+        margin-bottom: 24px;
+        padding-left: 8px;
+        font-size: 1.6rem;
+        border-radius: 5px;
+    }
+    // ーーーーーーーーーログインボタンーーーーーーーーーーーーーー
+    button{
+        width: 100%;
+        height: 47px;
+        background: $sorotabi-btn;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+    .login{
+        color: #ffffff;
+    }
+}
+
+// ーーーーーー忘れた方はこちらーーーーーーーーーーーーーーーーーー
+.catch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.catch:before,.catch:after{
+    border-top: 1px solid;
+    content: "";
+    width: 4em;
+}
+.catch:before{
+    margin-right: 1em;
+}
+.catch:after{
+    margin-left: 1em;
+}
+.Change{
+    margin-top: 16px;
+    text-align: center;
+    font-size: 1.2rem;
+    a{
+        color: $sorotabi-title3;
+    }
+}
+// --------------新規登録ーーーーーーーーーーーーーーーーーー
+.signup{
+    background: $address-color;
+    margin-top: 24px;
+}

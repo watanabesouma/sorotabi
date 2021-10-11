@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+html(lang="ja")
+    head
+        link(href="css/sorotabi-myplan.css" rel="stylesheet" type="text/css")
+        include _temp_p_head
+    body
+        header
+            button.logo-btn
+                a(href="sorotabi-title.html")
+                    img(src="img/logo-min.svg", alt="")
+            h1
+                img(src="img/search.svg", alt="" class="search-head")
+            //- p マイプラン
+
+        main
+            //- ------------------プラン選択-------------------
+            section.sectionWrap
+                h2.ttl マイプラン
+                section.planAll
+                    a(href="").planWrap
+                        .Item-left
+                            figure
+                                img(src="img/AdobeStock_304561907.png", alt="" class="onplan")
+                            .planName
+                                .plan-title
+                                    h2 大阪旅行プラン
+                                    span.Reserve 8月25日・予約済み
+                                p.route ホテルマブマックス梅田WEST＞大阪市立科学博物館＞大阪城天守閣
+                        .priceWrap
+                            p.people 料金：
+                            span.price 5,700円
+
+
+                    a(href="").planWrap
+                        .Item-left
+                            figure
+                                img(src="img/kyouto-min.png", alt="" class="onplan")
+                            .planName
+                                h2 京都旅行プラン
+                                p.route リーガグラン京都＞今宮神社＞一文字屋和輔＞...
+                        .priceWrap
+                            p.people 料金：
+                            span.price 8,390円
+
+                    //--------------------エラープラン------------------------------- 
+                    a(href="").planWrap
+                        .Item-left
+                            figure
+                                img(src="img/tokyo-min.png", alt="" class="onplan")
+                            .planName
+                                span.error プランに終了したサービスが含まれてます。
+                                h2 東京旅行プラン
+                                p.route 関西空港＞羽田空港＞音信お宿プレミア新宿駅...
+                        .priceWrap
+                            p.people 料金：
+                            span.price 7,900円
+
+                    a(href="").addition
+                        img(src="img/plus.svg", alt="")
+                        h2 プランを追加する
+
+        //- ----------------フッター-------------------------------------
+        footer
+                button
+                    a(href="sorotabi-home.html")
+                        img(src="img/home.svg", alt="")
+                        p ホーム
+                
+                button
+                    a(href="sorotabi-history.html")
+                        img(src="img/history.svg", alt="")
+                        p 履歴
+                
+                button.Myplan
+                    a(href="sorotabi-myplan.html")
+                        img(src="img/list-order.svg", alt="")
+                        p マイプラン
+                    
+                button
+                    a(href="sorotabi-shop.html")
+                        img(src="img/cart.svg", alt="")
+                        p ショップ
+                
+                button
+                    a(href="sorotabi-login.html")
+                        img(src="img/user.svg", alt="")
+                        p ユーザー
+            
+    include _temp_p_foot

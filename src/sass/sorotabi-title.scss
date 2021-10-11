@@ -1,0 +1,37 @@
+@import "vars";
+@import "ress";
+@import "common";
+
+
+.title-item{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient($sorotabi-title1,$sorotabi-title2,$sorotabi-title3);
+    text-align: center;
+    img{
+        margin-top: 152px;
+        margin-bottom: 254px;
+        width: 50%;
+    }
+    button{
+        width: 270px;
+        height: 100px;
+    }
+    .start-btn{
+        margin: 0 auto;
+        font-size: 3rem;
+        background: #8AD1F5;
+        width: 261px;
+        height: 64px;
+        border-radius: 50px;
+        line-height: 64px;
+        box-shadow: 0px 6px 6px 0px gray;
+        transition: 0.2s;
+
+        &:active{
+            transform: translateY(1px);
+            box-shadow: none;
+        }
+        // box-shadow: 0px -6px 3px 0px gray inset;
+    }
+}

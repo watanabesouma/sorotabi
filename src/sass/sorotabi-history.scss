@@ -1,0 +1,112 @@
+@import "vars";
+@import "ress";
+@import "common";
+
+
+.squeeze{
+    display: flex;
+    margin: 24px 0;
+    button{
+        width: 50%;
+        height: 53px;
+        border: 1px solid #000000;
+        font-size: 1.4rem;
+        
+        img{
+            margin-left: 16px;
+        }
+    }
+}
+h2{
+    font-size: 1.8rem;
+}
+
+.line-bar{
+    width: 100%;
+    height: 40px;
+    background: $bg-color;
+    line-height: 40px;
+    padding-left: 16px;
+    color: $address-color;
+}
+// ------------------履歴---------------------------------
+.popularItemWrap{
+    width: 100%;
+    height: 100%;
+    a{
+        display: flex;
+        justify-content: space-between;
+    }
+    figure img{
+        width: 136px;
+        margin-right: 32px;
+    }
+    img{
+        width: 100%;
+    }
+}
+.Item-left{
+    display: flex;
+}
+.scrollItem{
+    margin-top: 16px;
+    padding: 20px ;
+    border-bottom: 1px solid $address-color;
+    &:last-child{
+        border-bottom: none;
+    }
+}
+.explanation{
+    h2{
+        font-size: 2.4rem;
+    }
+    address{
+        font-size: 1.2rem;
+        margin-bottom: 10px;    
+    }
+}
+
+.popularItemTextWrap{
+    display: flex;
+    justify-content: space-between;
+}
+address,.times{
+    color: $address-color;
+}
+.popularItemText{
+    display: flex;
+}
+.explanation{
+    img{
+        width: 20px;
+    }
+    span{
+        font-size: 1.2em;
+    }
+
+    #number{
+        margin-left: 8px;
+        color: #B2B2B2;
+    }
+    
+}
+
+.Sales{
+    margin-top: 12px;
+    display: flex;
+    align-items: flex-end;
+    .times{
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+}
+.priceWrap{
+    .price{
+        line-height: 1.6rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $price-color;
+        margin-top: 5px;
+    }
+}
+
